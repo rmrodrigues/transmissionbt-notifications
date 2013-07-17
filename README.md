@@ -10,7 +10,7 @@ This is a small shell script that allows you send notification when a download f
 
 ###Useful/External Links
 [Transmission-rpc][]
-
+[Configuration Misc][]
 
 
 
