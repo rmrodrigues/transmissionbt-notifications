@@ -9,3 +9,10 @@ This is a small shell script that allows you send notification when a download f
 ###New Senders
 
 ###Useful/External Links
+[Transmission-rpc][]
+
+
+
+
+[Transmission-rpc]: https://trac.transmissionbt.com/wiki/rpc
+[Configuration Misc]: https://trac.transmissionbt.com/wiki/EditConfigFiles#Misc
