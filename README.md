@@ -21,15 +21,20 @@ There is a file `conf/config.properties` that contains all configurations. The m
 Currently, the file contains only one entry, the logger file path. This configuration must be used to persiste another configuration that will be used by another notification sender.
 
 ###How it works?
-Basically the transamission-daemon allows us to define a script that is executed after a download is done, given us some information such as: torrent ID, Torrent File Path, and other information. These information exported and we access it with environment variables, see all available [Variables][]. 
+Basically the transamission-daemon allows us to define a script that is executed after a download is done, given us some information such as: Torrent ID, Torrent Name, and other information. All that information is exported as environment variables, see all available [Variables][]. 
 
+####Notification Provider
+This is the start point of the application, it is executed by the transmission-daemon and after it do all needed work. So, the notification provadir when is executed, it get all sender scripts from folder `senders` and execute one by one at time.
 
 ###New Senders
+You can create your custom sender. To do that, you only need create the shell script and put it on senders folder and it will be automatically executed by the notification provider.
 
 ###Useful/External Links
 [Transmission-rpc][]
 
 [Configuration Misc][]
+
+[Variables][]
 
 
 
