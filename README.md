@@ -29,7 +29,7 @@ To install this simple application you only need put it the folder where you wan
 
 
 ###Configuration
-There is a file `conf/config.properties` that contains all configurations. The main goal is centralizing all configuraion on a unique configuration file.
+There is a file `conf/config.properties` that contains all configurations. The main goal is centralizing all configuration on a unique configuration file.
 
 Currently, the file contains only one entry, the logger file path. This configuration must be used to persist another configuration that will be used by another notification sender.
 
