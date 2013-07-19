@@ -52,3 +52,5 @@ You can create your custom sender. To do that, you only need create the shell sc
 [Transmission-rpc]: https://trac.transmissionbt.com/wiki/rpc
 [Configuration Misc]: https://trac.transmissionbt.com/wiki/EditConfigFiles#Misc
 [Variables]: https://trac.transmissionbt.com/wiki/Scripts
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/a8852347a93a51c87eb39ca0f1376761 "githalytics.com")](http://githalytics.com/rmrodrigues/transmissionbt-notifications)
