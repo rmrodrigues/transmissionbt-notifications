@@ -1,9 +1,6 @@
-> **Note:** The documentation  is being constructed. It can constains some errors or wrong sentences.
-
-
 #transmissionbt-notifications
 
-This is a small shell script that allows you send a notification when a download is done.
+This is a small shell script that allows you send a notification when a download is finished.
 
 The notification can be:
 * E-mail
@@ -13,7 +10,7 @@ The notification can be:
 ...and what you want.
 
 ###Installation
-To install this simple application you only need put it the folder where you want, on your home folder .e.g, and change the transmission-daemon settings to configure the script that will be invoked when a download is done.
+To install this simple application you only need put it the folder where you want, on your home folder e.g., and change the transmission-daemon settings to configure the script that will be invoked when a download is done.
 
 #####Properties:
 > **Note:** The transmission-daemon setting is a json file and it's normally on transmition-daemon installation folder.
