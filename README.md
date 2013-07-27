@@ -39,6 +39,10 @@ This is the start point of the application, it is executed by the transmission-d
 ###New Senders
 You can create your custom sender. To do that, you only need create the shell script and put it on senders folder and it will be automatically executed by the notification provider.
 
+##Future Work
+* Apple Push Notification Sender
+* Android Push Notification Sender
+
 ###Useful/External Links
 * [Transmission-rpc][]
 * [Configuration Misc][]
