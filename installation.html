@@ -1,98 +1,126 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>transmissionbt-notifications : Home</title>
+<title>transmissionbt-notifications : Home</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-  </head>
+<!-- Custom styles for this template -->
+<link href="css/sticky-footer-navbar.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
 
-    <!-- Wrap all page content here -->
-    <div id="wrap">
+	<!-- Wrap all page content here -->
+	<div id="wrap">
 
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><b>transmissionbt-notifications</b></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li ><a href="index.html">Home</a></li>
-              <li class="active"><a  href="installation.html">Installation</a></li>
-              <li><a href="plugins.html">Plugins</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><b>transmissionbt-notifications</b></a>
+				<div class="nav-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="installation.html">Installation</a></li>
+						<li><a href="plugins.html">Plugins</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
 
-      <!-- Begin page content -->
-      <div class="container">
-      <h1>Installation</h1>
-	  <div class="alert fade in">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        If you found or have some problem, please report it to us.
-      </div>
-      <p>In this page you can find all steps to install the notification system. Below there are some steps to describe all installation process.</p>
-       
-       <h2>Step 1 - Download & Save the build</h2>
-       <p>After download the latest build and unzipped it you need copy the build folder where you want. In this case we will copy the build to <code>/home/tmi/scripts/notifierSystem</code></p>
-       <div class="alert fade in">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        The folder <code>notifierSystem</code>  represents the transmissionbt-notifications.
-      </div>
-      
-      
-      <h2>Step 2 - Change the transmission-daemon configuration</h2>
-       <p>As you know the transmission allows you execute a shell script when a download is done. So, we need change that configuration to use this notification system. The configuration file usually is located at <code>/etc/init.d/transmission-daemon/settings.json</code>.</p>
-       <p>The configuration you need edit is:
-	       <ul>
-		       <li><code>"script-torrent-done-enabled": true</code></li>
-		       <li><code>"script-torrent-done-filename":"/home/tmi/scripts/notifierSystem/notificationProvider.sh"</code></li>
-	       </ul>
-       </p>
-       
-       <h2>Step 3 - Download & Install Plugins</h2>
-       <p>After you installed the base system, now you only need download and install the plugin that you want.</p>
-       <p>To install new plugins you only need path the plugin source on <code>/home/tmi/scripts/notifierSystem/senders</code> folder.</p>
+		<!-- Begin page content -->
+		<div class="container">
+			<h1>Installation</h1>
+			<div class="alert fade in">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				If you found or have some problem, please report it to us.
+			</div>
+			<p>In this page you can find all steps to install the
+				notification system. Below there are some steps to describe all
+				installation process.</p>
 
-       
-       </div>
-    </div>
+			<h2>Step 1 - Download & Save the build</h2>
+			<p>
+				After download the latest build and unzipped it you need copy the
+				build folder where you want. In this case we will copy the build to
+				<code>/home/tmi/scripts/notifierSystem</code>
+			</p>
+			<div class="alert fade in">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				The folder
+				<code>notifierSystem</code>
+				represents the transmissionbt-notifications.
+			</div>
 
-    <div id="footer">
-      <div class="container">
-        <p class="text-muted credit"> 
-        <a href="https://github.com/rmrodrigues">RMRodrigues</a> © 2013 - Thanks <a href="http://getbootstrap.com/">Bootstrap</a> 
-        </p>
-      </div>
-    </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			<h2>Step 2 - Change the transmission-daemon configuration</h2>
+			<p>
+				As you know the transmission allows you execute a shell script when
+				a download is done. So, we need change that configuration to use
+				this notification system. The configuration file usually is located
+				at
+				<code>/etc/init.d/transmission-daemon/settings.json</code>
+				.
+			</p>
+			<p>The configuration you need edit is:
+			<ul>
+				<li><code>"script-torrent-done-enabled": true</code></li>
+				<li><code>"script-torrent-done-filename":"/home/tmi/scripts/notifierSystem/notificationProvider.sh"</code></li>
+			</ul>
+			</p>
 
-  ga('create', 'UA-43042157-1', 'rmrodrigues.github.io');
-  ga('send', 'pageview');
+			<h2>Step 3 - Download & Install Plugins</h2>
+			<p>After you installed the base system, now you only need
+				download and install the plugin that you want.</p>
+			<p>
+				To install new plugins you only need path the plugin source on
+				<code>/home/tmi/scripts/notifierSystem/senders</code>
+				folder.
+			</p>
 
-</script>
-  </body>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-muted credit">
+				<a href="https://github.com/rmrodrigues">RMRodrigues</a> © 2013 -
+				Thanks <a href="http://getbootstrap.com/">Bootstrap</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-43042157-1', 'rmrodrigues.github.io');
+		ga('send', 'pageview');
+	</script>
+</body>
 </html>
